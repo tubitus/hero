@@ -4,9 +4,13 @@
     background: red;
     color: white;
     border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 
-.buttons .ghost{
+.button.ghost{
     background: none;
     border: 1px solid white;
 }
