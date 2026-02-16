@@ -1,12 +1,14 @@
 footer {
-    background-color: rgb(38, 40, 40);
+    background-color: #0f0f10;
     color: white;
     padding: 60px 36px 30px;
     width: 100%;
+    border-top: 1px solid #333;
 }
 
 footer .wrapper {
-    max-width: 1800px;
+    max-width: 1400px;
+    /* Match new wrapper max-width */
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -15,39 +17,42 @@ footer .wrapper {
 }
 
 footer .footer-section h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.4rem;
     margin-bottom: 20px;
-    color: white;
-    font-weight: 600;
+    color: #e0e0e0;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 footer .footer-section p,
 footer .footer-section a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.8);
+    color: #aaa;
     text-decoration: none;
     display: block;
     margin-bottom: 10px;
 }
 
 footer .footer-section a:hover {
-    color: red;
+    color: #bf202f;
     transition: ease .3s all;
+    padding-left: 5px;
+    /* Subtle movement */
 }
 
 footer .social-links {
     display: flex;
     gap: 15px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 footer .social-links a {
     width: 40px;
     height: 40px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #252525;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -56,23 +61,28 @@ footer .social-links a {
     color: white;
     font-size: 20px;
     transition: ease .3s all;
+    margin-bottom: 0;
+    /* Override generic a margin */
+    padding-left: 0;
+    /* Override generic hover padding */
 }
 
 footer .social-links a:hover {
-    background-color: red;
-    transform: scale(1.1);
+    background-color: #bf202f;
+    transform: translateY(-3px);
+    padding-left: 0;
 }
 
 footer .footer-bottom {
-    max-width: 1800px;
+    max-width: 1400px;
     margin: auto;
     padding-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid #252525;
     text-align: center;
 }
 
 footer .footer-bottom p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
 }
