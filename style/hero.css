@@ -1,312 +1,78 @@
-/* Main Padding */
-main {
+main{
     padding-top: 100px;
-    background-color: #121212;
-    /* Dark background base */
 }
 
-/* Global Typography Overrides for Sections */
-h1,
-h2,
-h3,
-h4,
-blockquote {
-    font-family: 'Cinzel', serif;
-    font-weight: 700;
-}
-
-p,
-a,
-li,
-cite {
-    font-family: 'Lato', sans-serif;
-}
-
-/* Hero Section */
-section.hero {
-    min-height: 90vh;
-    /* Slightly shorter than full screen for hint of content */
+section{
+    min-height: 100vh;
     width: 100%;
-    position: relative;
-    /* Dramatic dark fantasy gradient fallback since image is missing */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-        url('/imgs/hero_background_1771242365296.png');
-    background-size: cover;
-    background-position: center;
-    background-color: #0f0f10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+    background-color: rgb(38, 40, 40);
 
-section.hero .wrapper {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 20px;
-    z-index: 2;
-}
+    .wrapper{
+        max-width: 1800px;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 21px;
+        padding: 21px 36px;
 
-section.hero h1 {
-    color: #e0e0e0;
-    font-size: 4rem;
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-}
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-weight: 600;
+        }
 
-section.hero p {
-    color: #cccccc;
-    font-size: 1.4rem;
-    max-width: 800px;
-    line-height: 1.6;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
-}
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
 
-section.hero .wrapper-buttons {
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
-}
+        .wrapper-buttons{
+            display: flex;
+            gap: 10px;
 
-/* Features Section */
-section.features {
-    padding: 60px 0;
-    background-color: #1a1a1a;
-}
-
-section.features .wrapper {
-    max-width: 1400px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    padding: 0 36px;
-}
-
-.feature-card {
-    background: #252525;
-    padding: 40px;
-    border-radius: 8px;
-    text-align: center;
-    transition: transform 0.3s ease, background 0.3s ease;
-    border: 1px solid #333;
-}
-
-.feature-card:hover {
-    transform: translateY(-10px);
-    background: #2a2a2a;
-    border-color: #bf202f;
-    /* Witcher Red hint */
-}
-
-.feature-card .icon {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.feature-card h3 {
-    color: #fff;
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-}
-
-.feature-card p {
-    color: #aaa;
-    line-height: 1.6;
-}
-
-/* Content Sections */
-.content-section {
-    padding: 80px 0;
-}
-
-.dark-section {
-    background-color: #121212;
-    color: #fff;
-}
-
-.light-section {
-    background-color: #f0f0f0;
-    color: #121212;
-}
-
-.content-section .wrapper {
-    max-width: 1400px;
-    margin: auto;
-    padding: 0 36px;
-}
-
-.split-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-}
-
-@media (max-width: 768px) {
-    .split-layout {
-        grid-template-columns: 1fr;
+        }
     }
 }
 
-.feature-card .feature-icon {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 20px;
-}
-
-.content-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.text-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: inherit;
-}
-
-.text-content p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 20px;
-    color: inherit;
-    opacity: 0.9;
-}
-
-.link-arrow {
-    color: #bf202f;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s;
-}
-
-.link-arrow:hover {
-    color: #e03e4e;
-}
-
-/* Character Grid */
-.section-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.section-header h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.character-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.char-card {
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.light-section .char-card {
-    background: #fff;
-    color: #121212;
-}
-
-.char-card:hover {
-    transform: scale(1.03);
-}
-
-.char-img-placeholder {
-    width: 100%;
-    height: 250px;
-    /* Reduced from 300px for better ratio */
-    background-color: #ddd;
-    background-image: linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%, #ccc),
-        linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%, #ccc);
-    background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
-}
-
-.char-card h4 {
-    margin: 15px 0 5px;
-    font-size: 1.5rem;
-}
-
-.char-card p {
-    padding: 0 15px;
-    color: #555;
-    font-size: 1rem;
-}
-
-/* Quote Section */
-.quote-section {
-    padding: 100px 0;
-    background-color: #0f0f10;
-    background-image: radial-gradient(circle at center, #1a1a1a 0%, #000 100%);
-    text-align: center;
-    color: #fff;
-}
-
-.quote-section blockquote {
-    font-size: 2rem;
-    font-style: italic;
-    max-width: 900px;
-    margin: 0 auto 30px;
-    line-height: 1.6;
-}
-
-.quote-section cite {
-    font-size: 1.2rem;
-    color: #bf202f;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-/* Animation Utilities */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-}
-
-.fade-in-delay {
-    opacity: 0;
-    animation: fadeIn 1s 0.5s forwards;
-}
-
-.fade-in-delay-2 {
-    opacity: 0;
-    animation: fadeIn 1s 1s forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
+section.hero-content{
+    background-color: white;
+    
+    .wrapper{
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-weight: 600;
+        }
+        
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .hero-image{
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 10px;
+        }
     }
 }
 
-/* Mobile Responsiveness for Hero Typography */
-@media (max-width: 768px) {
-    section.hero h1 {
-        font-size: 2.5rem;
-    }
-
-    section.hero p {
-        font-size: 1.1rem;
+section.hero-content.dark{
+    background-color: rgb(38, 40, 40);
+    
+    .wrapper{
+        h2{
+            color: white;
+        }
+        
+        p{
+            color: white;
+        }
     }
 }

@@ -1,34 +1,16 @@
-.button {
-    padding: 12px 24px;
-    border-radius: 4px;
-    /* Sharper corners for medieval feel */
-    background: #bf202f;
+.button{
+    padding: 10px;
+    border-radius: 10px;
+    background: red;
     color: white;
-    border: 2px solid #bf202f;
+    border: none;
     text-decoration: none;
     display: inline-block;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
-    transition: all 0.3s ease;
 }
 
-.button:hover {
-    background: #8a1722;
-    border-color: #8a1722;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(191, 32, 47, 0.4);
-}
-
-.button.ghost {
-    background: transparent;
-    border: 2px solid white;
-}
-
-.button.ghost:hover {
-    background: white;
-    color: #121212;
-    border-color: white;
+.button.ghost{
+    background: none;
+    border: 1px solid white;
 }
