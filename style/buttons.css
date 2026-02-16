@@ -1,0 +1,12 @@
+.button{
+    padding: 10px;
+    border-radius: 10px;
+    background: red;
+    color: white;
+    border: none;
+}
+
+.buttons .ghost{
+    background: none;
+    border: 1px solid white;
+}
